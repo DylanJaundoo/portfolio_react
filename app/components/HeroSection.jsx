@@ -16,8 +16,8 @@ const HeroSection = () => {
             sequence={[
                 'Dylan Jaundoo',
                 2000,
-                'Web Developer',
-                2000,
+                'A Web Developer',
+                2200,
             ]}
             wrapper='span'
             speed={20}
@@ -40,7 +40,7 @@ const HeroSection = () => {
         </div>
         </div>
         <div className="col-span-5 place-self-center mt-4 lg:mt-0">
-            <div className="rounded-full bg-[#181818] w-[250px] h-[250px] lg:w-[400px] lg:h-[400px] relative">
+            <div className="rounded-full bg-[#181818] w-[250px] h-[250px] lg:w-[400px] lg:h-[400px] relative hover:grayscale">
             <Image 
                 src="/images/myproject.png"
                 alt='hero image'
