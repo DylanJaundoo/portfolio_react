@@ -50,7 +50,7 @@ const AboutSection = () => {
   }
   return (
     <section className='text-white'>
-        <div className=' md:grid md:grid-cols-2 gap-8 items-center py-8 px-4 sm:py-16'>
+        <div className=' md:grid md:grid-cols-2 gap-8 items-center py-8 sm:py-16'>
             <Image className='rounded-md hover:grayscale' src="/images/about-image.png" width={500} height={500}/>
             <div className='mt-4 md:mt-0 text-left flex flex-col h-full'>
                 <span className=' text-4xl font-bold mb-4'>About Me</span>
