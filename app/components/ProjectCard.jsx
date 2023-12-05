@@ -4,7 +4,7 @@ import Link from 'next/link';
 
 const ProjectCard = ({imgURL, title, description,gitURL,deployURL}) => {
   return (
-    <div className='hover:scale-105'>
+    <div className='hover:scale-105 px-10'>
       <div 
       className='h-52 md:h-80 rounded-t-xl relative group'
       style={{background:`url(${imgURL})`, backgroundSize:"cover"}}

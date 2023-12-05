@@ -3,6 +3,7 @@ import HeroSection from './components/HeroSection';
 import Navbar from './components/Navbar';
 import AboutSection from './components/AboutSection';
 import ProjectSection from './components/ProjectSection';
+import Achievments from './components/Achievments';
 
 export default function Home() {
   return (
@@ -10,6 +11,7 @@ export default function Home() {
       <Navbar />
       <div class='container  mt-24 mx-auto px-10'>
      <HeroSection />
+     <Achievments/>
      <AboutSection/>
      <ProjectSection/>
       </div>
