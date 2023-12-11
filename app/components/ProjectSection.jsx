@@ -34,8 +34,8 @@ const projectData =[
         title:"Fitness Blog",
         description: "Blog using React and API's (Under Construction)",
         image: "/images/projects/fitnessblog-image.jpg",
-        gitURL: "/",
-        deployURL: "/"
+        gitURL: "",
+        deployURL: ""
     },
 ]
 

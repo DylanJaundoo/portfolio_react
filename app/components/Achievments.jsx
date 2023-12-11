@@ -7,9 +7,9 @@ const AnimatedText = dynamic(() => {return import("react-animated-numbers")}, {s
 const Achievments = () => {
 const AchievmentsList = [
     {
-        title:"Experience",
+        title:"Years Experience",
         value:"2",
-        postfix:" years"
+        postfix:"+"
     },
     {
         title:"Projects",
@@ -24,10 +24,10 @@ const AchievmentsList = [
 ]
   return (
     <div className='py-8 px-4 xl:gap-16 sm:py-16 xl:px-16'>
-        <div className='border-grey border rounded-md py-8 px-16 flex flex-row items-center justify-between'>
+        <div className='border-grey border rounded-md py-8 px-16 flex flex-row items-center justify-between relative'>
       {AchievmentsList.map((achievement,index) => {
         return (
-            <div key={index} className='flex flex-col items center justify-center mx-4'>
+            <div key={index} className='flex flex-col center justify-center mx-4'>
                 <h2 className='text-white text-4xl font-bold flex flex-row'>
                 <AnimatedText
                   includeComma

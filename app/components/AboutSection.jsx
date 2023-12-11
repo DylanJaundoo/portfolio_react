@@ -4,7 +4,7 @@ import Image from "next/image";
 import { useState } from 'react';
 import TabButton from './TabButton';
 import { useRef } from 'react';
-import { motion,useInView } from 'framer-motion';
+import { motion, useInView } from 'framer-motion';
 
 const TabData = [
   {
@@ -41,9 +41,9 @@ const TabData = [
 ]
 
 
-  const cardVariants = {
-    intial:{x:50, opacity:0},
-    animate:{x:0, opacity:1},
+  const variant1 = {
+    initial:{y:50},
+    animate:{y:0},
 
 }
 
@@ -65,22 +65,24 @@ const AboutSection = () => {
   
   return (
     <section id='about'>
-        <div className=' md:grid md:grid-cols-2 gap-1 items-center py-8 sm:py-16'>
-            <Image className='rounded-md hover:grayscale' src="/images/about-image.png" width={500} height={400}/>
+        <div className=' md:grid md:grid-cols-2  items-center py-8 sm:py-16 relative'>
+            <Image className='rounded-md grayscale mt-4' src="/images/about-image2.png" width={300} height={300}/>
             <div className='mt-4 md:mt-0 text-left flex flex-col justify-end h-full'>
-              <motion.div
-              variants={cardVariants}
-              intial="initial"
-              animate={isInView ? "animate": ""}
-              transition={{duration:4}}>
+              <div>
             <h1>
-              <span className='  text-lg md:text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-primary-400 to-secondary-600'>About Me {" "}
+              <span 
+              className='text-lg md:text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-primary-400 to-secondary-600 lg:tracking-tighter'>
+                About Me {" "}
               </span>
             </h1>
-            </motion.div>
-                <p className='text-base lg:text-lg'> Hi, my name is Dylan Jaundoo I am a passionate web devleoper, born and raised in Queens, NY. I enjoy the creative process of designing and producing websites as well as the rational nature of coding. In the future I would like to venture beyond web design into mobile applications and game design. Check out my work below, and feel free to contact me if you need any additional information. </p>
+            
+            </div>
+                <p 
+                className='leading-loose text-base lg:text-lg lg:leading-loose'
+                > Hi, my name is Dylan Jaundoo I am a passionate web devleoper, born and raised in Queens, NY. I enjoy the creative process of designing and producing websites as well as the rational nature of coding. In the future I would like to venture beyond web design into mobile applications and game design. Check out my work below, and feel free to contact me if you need any additional information. 
+                </p>
              
-            <div className='flex flex-row mt-8 justify-around'>
+            <div className='flex flex-row mt-8 justify-around z-1'>
               <TabButton selectTab={()=>handleChange("skills")} active={tab==="skills"}>{" "}Skills{" "}</TabButton>  
               <TabButton selectTab={()=>handleChange("education")} active={tab==="education"}>{" "}Education{" "}</TabButton>  
               <TabButton selectTab={()=>handleChange("certifications")} active={tab==="certifications"}>{" "}Certifications{" "}</TabButton>  
