@@ -7,6 +7,7 @@ import Image from 'next/image';
 
 const EmailSection = () => {
     const [emailSubmitted, setEmailSubmitted] = useState(false);
+
     const handleSubmit = async (e) => {
         e.preventDefault();
         const data = {
@@ -14,12 +15,13 @@ const EmailSection = () => {
           subject: e.target.subject.value,
           message: e.target.message.value,
         };
+
         const JSONdata = JSON.stringify(data);
         const endpoint = "/api/send";
     
         // Form the request for sending data to the server.
         const options = {
-          // The method is POST because we are sending data.
+          // The method is POST because we are sending data/message.
           method: "POST",
           // Tell the server we're sending JSON.
           headers: {
@@ -43,7 +45,7 @@ const EmailSection = () => {
          <div className="bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))]
           from-primary-900 to-transparent rounded-full h-80 w-80 z-0 blur-lg absolute top-1/2 -left-4 transform -translate-x-1/2 -translate-1/2"></div>
         <div className='z-10'>
-            <h3 className='text-xl font-bold text-white my-2'>Let's Connect!</h3>
+            <h3 className='text-xl font-bold text-white my-2'>Lets Connect!</h3>
             <p className='text-[#ADB7BE] mb-4 max-w-md'>{" "}
                 Please feel free to contact me regarding more information. 
                 I am always open to new oppritunities. 

@@ -9,7 +9,7 @@ const projectData =[
         id:1,
         title:"GPT-3 Design",
         description: "Frontend design using React, following Figma schema.",
-        image: "/images/projects/gpt3-image.png",
+        image: "/images/gpt3-image.png",
         gitURL: "https://github.com/DylanJaundoo/ChatGPT3",
         deployURL: "https://github.com/DylanJaundoo/ChatGPT3"
     },
@@ -17,7 +17,7 @@ const projectData =[
         id:2,
         title:"First Website (Outdated)",
         description: "First attempt at building a website using Vanilla HTML/CSS",
-        image: "/images/projects/portfolio1-image.png",
+        image: "/images/portfolio1-image.png",
         gitURL: "https://github.com/DylanJaundoo/Front-End-Portfolio",
         deployURL: "https://front-end-portfolio-azure.vercel.app/"
     },
@@ -25,7 +25,7 @@ const projectData =[
         id:3,
         title:"Pricing Card",
         description: " Pricing card design challenge from FrontEnd Mentor",
-        image: "/images/projects/pricingcard-image.png",
+        image: "/images/pricingcard-image.png",
         gitURL: "https://github.com/DylanJaundoo/pricing-card-frontend-mentor-challenge/tree/github-pages",
         deployURL: "https://pricing-card-frontend-mentor-challenge-seven.vercel.app/"
     },
@@ -33,7 +33,7 @@ const projectData =[
         id:4,
         title:"Fitness Blog",
         description: "Blog using React and API's (Under Construction)",
-        image: "/images/projects/fitnessblog-image.jpg",
+        image: "/images/fitnessblog-image.jpg",
         gitURL: "",
         deployURL: ""
     },
@@ -58,6 +58,7 @@ const ProjectSection = () => {
              <motion.li 
              variants={cardVariants} 
              intial="intial" 
+             key={index}
              animate={isInView ? "animate" : "intial"}
              transition={{duration:0.3, delay:index*0.6}}>
              <ProjectCard 

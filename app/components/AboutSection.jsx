@@ -65,9 +65,9 @@ const AboutSection = () => {
   
   return (
     <section id='about'>
-        <div className=' md:grid md:grid-cols-2  items-center py-8 sm:py-16 relative'>
-            <Image className='rounded-md grayscale mt-4' src="/images/about-image2.png" width={300} height={300}/>
-            <div className='mt-4 md:mt-0 text-left flex flex-col justify-end h-full'>
+        <div className=' md:grid md:grid-cols-3 items-center py-8 sm:py-16 relative'>
+          <Image className='rounded-md grayscale mt-4' src={"/images/about-image2.png"} width={300} height={300} alt='Image'/>
+            <div className='mt-4 md:mt-0 text-left col-start-2 col-end-4 flex flex-col justify-end h-full'>
               <div>
             <h1>
               <span 

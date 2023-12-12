@@ -27,7 +27,7 @@ const AchievmentsList = [
         <div className='border-grey border rounded-md py-8 px-16 flex flex-row items-center justify-between relative'>
       {AchievmentsList.map((achievement,index) => {
         return (
-            <div key={index} className='flex flex-col center justify-center mx-4'>
+            <div key={index} className='flex flex-col center justify-center lg:mx-4'>
                 <h2 className='text-white text-4xl font-bold flex flex-row'>
                 <AnimatedText
                   includeComma
@@ -44,7 +44,7 @@ const AchievmentsList = [
                 />
                 {achievement.postfix}
                 </h2>
-                <p className='text-[#ADB7BE] text-base'>{achievement.title}</p>
+                <p className='text-[#ADB7BE] text-xs  md:text-base lg:text-base'>{achievement.title}</p>
             </div>
         )
       })}
